@@ -1,0 +1,35 @@
+{
+  "greeting": "Hello, I'm",
+  "description": [
+    {
+      "text": "Undergraduate student of Informatics Engineering at Airlangga University "
+    },
+    {
+      "text": "with strong interests in software engineering and data analysis",
+      "bold": true
+    },
+    {
+      "text": ". Skilled in programming (Python, Java, PHP) and database management (MySQL, PostgreSQL). Experienced in developing academic projects that strengthened problem-solving and teamwork abilities. "
+    },
+    {
+      "text": "Highly motivated, adaptable, and eager to contribute both analytical and technical skills to innovative projects.",
+      "bold": true
+    }
+  ],
+  "stickers": [
+    "React",
+    "Hai! 👋",
+    "Tailwind CSS",
+    "Mahasiswa TI",
+    "Front-end"
+  ],
+  "marquee": [
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "Front-end",
+    "UI Design",
+    "Laravel",
+    "Git"
+  ]
+}

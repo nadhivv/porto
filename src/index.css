@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* ============================================================
+   TEMA
+   Apa pun yang didaftarkan di sini langsung bisa dipakai
+   sebagai class Tailwind:
+     --font-display   →  class "font-display"
+     --color-coral    →  class "bg-coral", "text-coral", "border-coral"
+   ============================================================ */
+@theme {
+  /* ---------- FONT ----------
+     Fredoka: bulat dan gemuk, dipakai untuk semua judul.
+     Nunito: ujungnya ikut membulat, nyaman dibaca panjang. */
+  --font-display: 'Fredoka', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+  /* ---------- NETRAL ----------
+     Tinta sengaja plum-navy, bukan hitam murni. Hitam pekat
+     terasa kaku, sedangkan ini lebih ramah. */
+  --color-cream: #fff8ed;
+  --color-cream-2: #ffeeda;
+  --color-ink: #2a2440;
+  --color-ink-soft: #6c6485;
+
+  /* ---------- AKSEN ----------
+     Selalu dipasangkan dengan garis tepi dan teks warna tinta. */
+  --color-coral: #ff6b5a;
+  --color-violet: #7c5cff;
+  --color-butter: #ffce4a;
+  --color-mint: #3dd6a0;
+  --color-sky: #55b8f0;
+}
+
+/* ============================================================
+   CLASS BUATAN SENDIRI
+   ============================================================ */
+
+/* (Pembatas putus-putus antar bagian sudah dihapus. Pergantian
+   bagian sekarang ditandai oleh judul besarnya sendiri.) */
+
+/* "pop" = garis tepi tebal + bayangan keras tanpa blur.
+   Ini ciri khas tampilannya. Bayangan biasa itu kabur dan lembut,
+   bayangan ini padat seperti stiker yang ditempel. */
+@utility pop {
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+
+@utility pop-sm {
+  border: 2px solid var(--color-ink);
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+/* Dipakai bersama "pop": saat disentuh, elemennya bergeser ke arah
+   bayangan dan bayangannya memendek, jadi terasa seperti ditekan.
+
+   Sengaja memakai properti `translate`, BUKAN `transform`.
+   Kalau pakai `transform`, kemiringan dari class "rotate-*" akan
+   tertimpa dan kartu yang miring mendadak lurus saat disentuh. */
+@utility pop-press {
+  /* cubic-bezier dengan angka kedua di atas 1 akan MELEWATI tujuan
+     lalu balik — itu meniru per, jadi gerakannya senada dengan
+     animasi Motion di tempat lain. Kalau pakai "ease" biasa,
+     gerakannya berhenti pas di tempat tanpa pantulan. */
+  transition:
+    translate 0.34s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.34s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:hover {
+    translate: 3px 3px;
+    box-shadow: 2px 2px 0 var(--color-ink);
+  }
+
+  /* Saat diklik, gerakannya dibuat cepat dan tanpa pantulan
+     supaya terasa tegas seperti tombol betulan. */
+  &:active {
+    transition:
+      translate 0.06s ease-out,
+      box-shadow 0.06s ease-out;
+    translate: 6px 6px;
+    box-shadow: 0 0 0 var(--color-ink);
+  }
+}
+
+:root {
+  /* Tema terang saja. Palet seperti ini tidak punya
+     padanan gelap yang sama bagusnya. */
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+/* Jarak aman supaya judul bagian tidak tertutup menu yang menempel
+   di atas, saat kamu mengklik menu. */
+main > section {
+  scroll-margin-top: 5rem;
+}
+
+/* ============================================================
+   EFEK MAGNET — SENGAJA DIMATIKAN
+
+   Dulu di sini ada CSS Scroll Snap. Dilepas karena dua hal:
+
+   1. Tiap bagian terpaksa dibuat setinggi persis satu layar agar
+      titik tempelnya rapi. Padahal isi tiap bagian beda-beda
+      banyaknya, sehingga bagian yang isinya sedikit jadi punya
+      ruang kosong besar yang terasa janggal saat dilewati.
+
+   2. Mode "proximity" tidak konsisten: kadang menarik, kadang
+      tidak, tergantung di mana scroll berhenti. Sedangkan mode
+      "mandatory" membuat isi yang lebih tinggi dari layar jadi
+      tidak bisa dijangkau sama sekali.
+
+   Mau dicoba lagi? Hapus tanda komentar di bawah ini, lalu
+   kembalikan tinggi tiap bagian jadi satu layar penuh di
+   Section.jsx (ganti "py-24 lg:py-32" dengan "min-h-dvh
+   flex flex-col justify-center py-28").
+
+   @media (min-height: 700px) and (prefers-reduced-motion: no-preference) {
+     html { scroll-snap-type: y proximity; }
+     main > section { scroll-snap-align: start; }
+   }
+   ============================================================ */
+
+::selection {
+  background: var(--color-butter);
+  color: var(--color-ink);
+}
+
+/* Hormati pengguna yang mematikan animasi di setelan sistemnya */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}

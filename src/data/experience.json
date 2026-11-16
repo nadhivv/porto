@@ -1,0 +1,21 @@
+[
+  {
+    "role": "Consumption Division Staff",
+    "org": "Informatics Engineering Student Association Committee",
+    "type": "Magang",
+    "period": "Jun 2025 — Agu 2025",
+    "description": "Ringkasan singkat tentang apa yang dikerjakan selama magang.",
+    "points": [
+      "Hal yang kamu kerjakan atau hasilkan",
+      "Pencapaian lain, kalau bisa pakai angka"
+    ]
+  },
+  {
+    "role": "Staf Divisi",
+    "org": "Nama Organisasi",
+    "type": "Organisasi",
+    "period": "2024 — 2025",
+    "description": "Ringkasan singkat peranmu di organisasi ini.",
+    "points": []
+  }
+]

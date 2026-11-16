@@ -1,0 +1,26 @@
+[
+  {
+    "href": "#tentang",
+    "label": "About"
+  },
+  {
+    "href": "#pendidikan",
+    "label": "Education"
+  },
+  {
+    "href": "#pengalaman",
+    "label": "Experience"
+  },
+  {
+    "href": "#keahlian",
+    "label": "Skills"
+  },
+  {
+    "href": "#proyek",
+    "label": "Projects"
+  },
+  {
+    "href": "#sertifikat",
+    "label": "Awards"
+  }
+]

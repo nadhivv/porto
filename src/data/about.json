@@ -1,0 +1,24 @@
+{
+  "paragraphs": [
+    "Ketertarikan saya pada web dimulai dari iseng-iseng mengubah tema blog, lalu berkembang jadi serius saat mulai belajar JavaScript dan React.",
+    "Saya terbiasa bekerja dalam tim, memakai Git untuk kolaborasi, dan senang mengerjakan detail kecil yang membuat sebuah antarmuka terasa enak dipakai."
+  ],
+  "facts": [
+    {
+      "label": "Jurusan",
+      "value": "Teknik Informatika"
+    },
+    {
+      "label": "Fokus",
+      "value": "Front-end"
+    },
+    {
+      "label": "Lokasi",
+      "value": "Indonesia"
+    },
+    {
+      "label": "Status",
+      "value": "Mahasiswa aktif"
+    }
+  ]
+}

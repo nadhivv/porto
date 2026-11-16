@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Bahasa",
+    "icon": "{ }",
+    "items": [
+      "JavaScript",
+      "Python",
+      "Java",
+      "PHP",
+      "Dart"
+    ]
+  },
+  {
+    "title": "Framework & Library",
+    "icon": "◆",
+    "items": [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Laravel",
+      "Flutter"
+    ]
+  },
+  {
+    "title": "Basis Data",
+    "icon": "▤",
+    "items": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Pocketbase"
+    ]
+  },
+  {
+    "title": "Tools",
+    "icon": "✦",
+    "items": [
+      "Git",
+      "VS Code",
+      "Figma",
+      "Postman"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "CookMate - Web Application",
+    "description": "Educational recipe sharing platform with healthy lifestyle features",
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "PHP",
+      "JavaScript",
+      "jQuery"
+    ],
+    "image": "",
+    "repo": "#",
+    "demo": "#"
+  },
+  {
+    "title": "Ethereak Beaute - Mobile Application",
+    "description": "Salon and beauty booking application with personalized features",
+    "tech": [
+      "Flutter",
+      "Pocketbase"
+    ],
+    "image": "",
+    "repo": "#",
+    "demo": "#"
+  },
+  {
+    "title": "StayNest - Web Application",
+    "description": "Homestay and guesthouse booking system with additional services",
+    "tech": [
+      "Laravel",
+      "MySQL"
+    ],
+    "image": "",
+    "repo": "#",
+    "demo": ""
+  }
+]
