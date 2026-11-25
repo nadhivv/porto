@@ -1,21 +1,51 @@
 [
   {
-    "role": "Consumption Division Staff",
-    "org": "Informatics Engineering Student Association Committee",
-    "type": "Magang",
-    "period": "Jun 2025 — Agu 2025",
-    "description": "Ringkasan singkat tentang apa yang dikerjakan selama magang.",
-    "points": [
-      "Hal yang kamu kerjakan atau hasilkan",
-      "Pencapaian lain, kalau bisa pakai angka"
-    ]
+    "role": "Fullstack Developer",
+    "org": "PT PAL Indonesia (PERSERO)",
+    "type": "Internship",
+    "period": "August - November 2026",
+    "description": "Contributed to the development of internal application systems, working across both front-end and back-end. Built user interfaces, implemented basic server-side features, and managed database integration while applying foundational fullstack development skills."
   },
   {
-    "role": "Staf Divisi",
-    "org": "Nama Organisasi",
-    "type": "Organisasi",
-    "period": "2024 — 2025",
-    "description": "Ringkasan singkat peranmu di organisasi ini.",
-    "points": []
+    "role": "Event Division Staff",
+    "org": "Biztech 2025",
+    "type": "Student Association",
+    "period": "September 2025",
+    "description": "Supported event management for business & technology talkshow program."
+  },
+  {
+    "role": "Event Division Staff",
+    "org": "HIMTI Cares Vol 3",
+    "type": "Community service committee of the Informatics Engineering Student Association",
+    "period": "July 2025",
+    "description": "Organized community service event for local residents."
+  },
+  {
+    "role": "Participant",
+    "org": "LKMM-TD",
+    "type": "Basic student management skill training",
+    "period": "May 2025",
+    "description": "Developed foundational leadership, organizational management, and problemsolving skills."
+  },
+  {
+    "role": "Event Division Staff",
+    "org": "Inisialisasi 2024",
+    "type": "Student Association",
+    "period": "September - November 2024",
+    "description": "Assisted in planning and executing student orientation activities."
+  },
+  {
+    "role": "Public Relations and Licensing Division Staff",
+    "org": "HIMTIGOIN' (HIMTI Goes To Industry)",
+    "type": "Student Association",
+    "period": "June 2024",
+    "description": "Coordinated communication and secured permits with external parties."
+  },
+  {
+    "role": "Consumption Division Staff",
+    "org": "Kuliah Tamu D4 Teknik Informatika AI dan Keamanan : Menghadapi Tantangan Keamanan Siber dengan Teknologi Kecerdasan Buatan",
+    "type": "Student Association",
+    "period": "April 2024",
+    "description": "Managed logistics and catering"
   }
 ]
